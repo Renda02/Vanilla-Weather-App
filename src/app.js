@@ -106,4 +106,10 @@ searchForm.addEventListener("submit", handleSearch);
 let currentLocationButton = document.querySelector("#btn");
 currentLocationButton.addEventListener("click", findLocation);
 
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celcius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
 searchCity("Clarens");
