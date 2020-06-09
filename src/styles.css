@@ -1,0 +1,122 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1541450805268-4822a3a774ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 700px;
+  border-radius: 20px;
+  background: #fff;
+  padding-top: 30px;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+#icon {
+  position: relative;
+  top: -8px;
+  max-width: 75px;
+}
+
+header {
+  position: relative;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  padding: 5px;
+  left: 35%;
+}
+
+input[type="text"] {
+  background: #fff;
+  width: 250px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+input[type="submit"] {
+  position: relative;
+  border-radius: 0 20px 20px 0;
+  height: 40px;
+  width: 80px;
+  border: none;
+  outline: none;
+  background: teal;
+  cursor: pointer;
+  color: #fff;
+  margin-left: -5px;
+  transition: 2ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: #13104d;
+}
+
+#city {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400px;
+  line-height: 1.5;
+  margin-top: 25px;
+}
+
+#date {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+
+.degrees {
+  transition: all 200ms ease-in-out;
+  font-size: 16px;
+  position: relative;
+  top: -32px;
+}
+
+.tempUnit:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+#temperature {
+  height: 70px;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#more-info {
+  height: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin: 30px;
+  border: 1px solid;
+  text-align: center;
+  justify-content: center;
+}
+
+.description {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#btn {
+  position: relative;
+  left: 30%;
+  top: -38px;
+  height: 40px;
+}
