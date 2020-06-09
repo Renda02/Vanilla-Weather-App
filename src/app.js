@@ -83,30 +83,5 @@ searchForm.addEventListener("submit", handleSearch);
 
 let currentLocationButton = document.querySelector("#btn");
 currentLocationButton.addEventListener("click", findLocation);
+
 searchCity("Clarens");
-//Unit Conversion
-
-function showFahrenheitTemperature(event) {
-  event.preventDefault();
-  let fTemp = (cTemp * 9) / 5 + 32;
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let currentTemperature = document.querySelector("#tempToday");
-  currentTemperature.innerHTML = Math.round(fTemp) + "° F";
-}
-
-function showCelsiusTemperature(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let currentTemperature = document.querySelector("#tempToday");
-  currentTemperature.innerHTML = Math.round(cTemp) + "° C";
-}
-
-let cTemp = null;
-
-let fahrenheitLink = document.querySelector("#fahrenht");
-fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", showCelsiusTemperature);
