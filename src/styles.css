@@ -4,15 +4,17 @@ body {
   background-size: cover;
   font-family: "Spartan", sans-serif;
 }
-
-.container {
-  box-sizing: border-box;
+.wrapper {
   max-width: 700px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  box-sizing: border-box;
   border-radius: 20px;
   background: #fff;
   padding-top: 30px;
   margin-top: 50px;
-  height: 100vh;
 }
 
 #icon {
