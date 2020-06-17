@@ -35,6 +35,7 @@ input {
   font-size: 18px;
   box-sizing: border-box;
   transition: 0.5s;
+  translate: (-50%, -50%);
   padding: 5px;
   left: 35%;
 }
