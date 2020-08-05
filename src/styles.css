@@ -30,25 +30,25 @@ header {
 }
 
 input {
-  position: relative;
-  display: inline-block;
+  position: flex;
+  justify-content: center;
   font-size: 18px;
   box-sizing: border-box;
   transition: 0.5s;
   padding: 5px;
-  left: 30%;
 }
 
 input[type="text"] {
   background: #fff;
-  width: 200px;
+  width: 160px;
   height: 40px;
   padding: 0 20px;
   border-radius: 20px 0 0 20px;
+  margin-left: 26%;
 }
 
 input[type="submit"] {
-  position: relative;
+  position: flex;
   border-radius: 0 20px 20px 0;
   height: 40px;
   width: 80px;
@@ -118,7 +118,7 @@ input[type="submit"]:hover {
 
 #btn {
   position: relative;
-  left: 24%;
+  left: 20%;
   top: -38px;
   height: 40px;
 }
