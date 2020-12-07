@@ -112,4 +112,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-searchCity("Clarens");
+searchCity("Barcelona");
