@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Vanilla weather-app</title>
-    <link rel="stylesheet" href="src/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/2459765eed.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://kit.fontawesome.com/2459765eed.js"
-    crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-      <div class="content-wrapper">
-      <header>
-  
-        <form id="search-box"> 
-        <input type="text"  name="" id="txt" autocomplete="off" autofocus="on" placeholder="Enter location" />
-          <input type="submit" name="" id="search-btn" />
-        </form>
-        <button class="btn btn success h-40 w-80" id="btn"><i class="fas fa-search-location"></i></button>
-      </header>
-      <main>
-        <section id="place">
-          <div id="city"></div>
-          <div id="date"><small></small></div>
-        </section>
-        <br />
-              <div id="temperature">
-                <img
-                  src=""
-                  id="icon"
-                />
-                <span id="tempToday"></span>
-                <span class="degrees"
-                  >
-                <a href="" class="active" id="celcius-link"> °C </a>
-                |
-                <a href="#" id="fahrenheit-link">°F</a></span>
-              </div>
-              <div class="description">
-                <span id="feels"></span>
-              </div>
-              </section>
-              <br>
-              <br>
-<div id="more-info" class="row">
-  <div class="col">Feels Like: <span id="feelsLike"></span> °C</div>
-  <div class="col"> <img src="https://img.icons8.com/metro/26/000000/wet.png" /> : 
-    <span id="humidity"></span>%</div>
 
-  <div class="col"><img
-                    src="https://img.icons8.com/ios-glyphs/30/000000/wind.png"
-                  /> : <span id="wind"></span> Km/h</div>     
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vanilla weather-app</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://kit.fontawesome.com/2459765eed.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+<script src="https://kit.fontawesome.com/2459765eed.js" crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="content-wrapper">
+        <header>
+
+          <form id="search-box">
+            <input type="text" name="" id="txt" autocomplete="off" autofocus="on" placeholder="Enter location" />
+            <input type="submit" name="" id="search-btn" />
+          </form>
+          <button class="btn btn success h-40 w-80" id="btn"><i class="fas fa-search-location"></i></button>
+        </header>
+        <main>
+          <section id="place">
+            <div id="city"></div>
+            <div id="date"><small></small></div>
+          </section>
+          <br />
+          <div id="temperature">
+            <img src="" id="icon" />
+            <span id="tempToday"></span>
+            <span class="degrees">
+              <a href="" class="active" id="celcius-link"> °C </a>
+              |
+              <a href="#" id="fahrenheit-link">°F</a></span>
+          </div>
+          <div class="description">
+            <span id="feels"></span>
+          </div>
+          </section>
+          <br>
+          <br>
+          <div id="more-info" class="row">
+            <div class="col">Feels Like: <span id="feelsLike"></span> °C</div>
+            <div class="col"> <img src="https://img.icons8.com/metro/26/000000/wet.png" /> :
+              <span id="humidity"></span>%</div>
+
+            <div class="col"><img src="https://img.icons8.com/ios-glyphs/30/000000/wind.png" /> : <span
+                id="wind"></span> Km/h</div>
           </div>
           <br>
-   
-      </main>
-    </div>
-    <footer>
-       <small><a href="https://github.com/Renda02/Weather-app-"> Open Source Code</a> by Rendani
-        Luvhengo</small> 
-      </footer>
+
+        </main>
       </div>
+      <footer>
+        <small><a href="https://github.com/Renda02/Weather-app-"> Open Source Code</a> by Rendani
+          Luvhengo</small>
+      </footer>
     </div>
-    
-  </body>
-  <script src="src/app.js"></script>
+  </div>
+
+</body>
+<script src="src/app.js"></script>
+
 </html>
